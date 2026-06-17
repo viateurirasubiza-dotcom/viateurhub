@@ -128,3 +128,93 @@ a{
     box-shadow:0 10px 30px rgba(0,0,0,0.08);
     margin-bottom:30px;
 }
+/* LAYOUT */
+.layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:250px;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sidebar h2{
+    margin-bottom:20px;
+}
+
+.sidebar a{
+    color:#cbd5e1;
+    text-decoration:none;
+    padding:10px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#1e293b;
+    color:white;
+}
+
+/* DASHBOARD MAIN */
+.dashboard{
+    flex:1;
+    padding:30px;
+    background:#f6f8fb;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+/* DASH CARDS */
+.dash-card{
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.dash-card:hover{
+    transform:translateY(-5px);
+}
+
+.dash-card h3{
+    margin-bottom:10px;
+}
+
+.dash-card a{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 12px;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+/* DARK MODE */
+.dark-mode .dashboard{
+    background:#0f172a;
+    color:white;
+}
+
+.dark-mode .dash-card{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode .sidebar{
+    background:#000;
+}
