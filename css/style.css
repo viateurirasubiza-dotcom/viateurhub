@@ -1,0 +1,22 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #0066cc;
+    color: white;
+    padding: 15px;
+}
+
+button{
+    padding: 10px;
+    margin: 5px;
+}
+
+.dark-mode{
+    background: #111;
+    color: white;
+}
